@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: auto;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    height: auto;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0.5rem;
+}
+
+.head {
+    width: 100%;
+    height: 6rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.head input {
+    height: 75%;
+    width: 50%;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+.head i {
+    font-size: 3rem;
+}
+
+.block_1 {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(243, 225, 255);
+}
+
+.title {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.favorite {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.favorite-img {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.favorite-img img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+}
+
+.favorite-img span {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.block_2 {
+    height: auto;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.recette {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    background-color: white;
+    width: 90%;
+    box-shadow: 0 0 0.2rem 0.2rem rgb(190, 187, 187);
+}
+
+.recette img {
+    width: 100%;
+    height: 85%;
+}
+
+.recette .div-titre {
+    height: 15%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.recette div span {
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.recette div i {
+    font-size: 2.4rem;
+    color: rgb(160, 156, 156)
+}
+
+.btn-generer {
+    z-index: 2;
+    margin-top: 2%;
+    position: absolute;
+    width: 20%;
+    height: 6%;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-generer:hover {
+    background-color: rgb(185, 182, 182);
+}
+
+
+/* css - popup */
+
+.popup {
+    z-index: 5;
+    height: 52rem;
+    background-color: white;
+    width: 40%;
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: 2rem;
+    border: 0.4rem solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 0.2rem;
+    align-items: center;
+}
+
+.body::before {
+    z-index: 4;
+    content: "";
+    background-color: rgb(68, 67, 67);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.body {
+    /* overflow: hidden; */
+    height: auto;
+}
+
+.popup img {
+    width: 100%;
+    height: 60%;
+}
+
+.popup span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.popup button {
+    width: 2rem;
+    margin-left: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.descript {
+    height: 30%;
+    overflow-y: scroll;
+    font-size: 1.2rem;
+}

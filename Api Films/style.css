@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* overflow: hidden; */
+    background-color: rgb(133, 138, 201);
+}
+
+.main {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(55, 59, 105);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2%;
+    position: fixed;
+    z-index: 2;
+}
+
+.header input {
+    width: 15%;
+    height: 60%;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(55, 59, 105);
+    border: 0.2rem solid rgb(34, 37, 74);
+    color: white;
+    outline: none;
+}
+
+.content {
+    height: 40rem;
+    width: 100%;
+    background-color: rgb(34, 37, 74);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.block {
+    height: 80%;
+    width: 100%;
+    background-color: red;
+}
+
+.div-film {
+    height: 90%;
+    width: 22%;
+    background-color: rgb(55, 59, 105);
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-film-display {
+    display: none;
+}
+
+.zoom-div-film {
+    height: 90%;
+    width: 23%;
+    box-shadow: 0 0 0.5rem 0.5rem rgb(216, 210, 210);
+    transition: all 0.5s;
+}
+
+.div-img {
+    height: 80%;
+    width: 100%;
+    transition: all 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-img-resize {
+    height: 60%;
+    width: 100%;
+    transition: all 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.div-img-resize img {
+    width: 100%;
+    height: 100%;
+}
+
+.div-titre {
+    height: 20%;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.description {
+    z-index: 3;
+    height: 40%;
+    /* width: 100%; */
+    background-color: white;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* display: none; */
+    transition: height 1s;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.show-des {
+    z-index: 1;
+    background-color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    transition: width 1s;
+    opacity: 1;
+}
+
+.div-titre span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    height: 100%;
+}
+
+.div-titre button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(9, 211, 87);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background-color: rgb(34, 37, 74);
+    border: none;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    margin-top: 4%;
+}
+
+.hide {
+    display: none;
+}
+
+.pagination {
+    width: 90%;
+    height: 3rem;
+    font-size: 1.4rem;
+    background-color: rgb(55, 59, 105);
+    border-radius: 1rem;
+    margin-top: 0.2rem;
+    color: white;
+    display: none;
+}
+
+.pagination:hover {
+    background-color: rgb(214, 216, 235);
+    color: rgb(55, 59, 105);
+}
+
+.loader {
+    border: 12px solid rgb(34, 37, 74);
+    border-radius: 50%;
+    border-top: 12px solid white;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.scroll-top {
+    height: 5rem;
+    width: 5rem;
+    font-size: 4rem;
+    position: fixed;
+    margin-top: 40%;
+    z-index: 4;
+    margin-left: 90%;
+    color: #fff;
+    border-radius: 50%;
+    background-color: rgb(62, 128, 8);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0.3rem 0.3rem rgb(252, 245, 245)
+}
+
+.scroll-top i {
+    font-size: 3rem;
+}
+
+.scroll-top:hover {
+    height: 6rem;
+    width: 6rem;
+    box-shadow: 0 0 0.4rem 0.4rem rgb(252, 245, 245);
+}
